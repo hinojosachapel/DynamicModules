@@ -1,5 +1,5 @@
 # Dynamic Modules
-Dynamic Modules is a sample prototype for a dynamic modular application based on the [PRISM-Library](https://github.com/PrismLibrary/Prism) and the [Modern UI for WPF (MUI)](https://github.com/firstfloorsoftware/mui) toolkit for creating metro-styled, modern UI WPF applications in a plugin architecture.
+Dynamic Modules is a sample prototype for a WPF modular application based on the [Prism Library](https://github.com/PrismLibrary/Prism) and the [Modern UI for WPF (MUI)](https://github.com/firstfloorsoftware/mui) toolki. It is a proof of concept for creating metro-styled, modern UI WPF applications in a plugin architecture.
 
 ![](https://github.com/hinojosachapel/DynamicModules/blob/master/dynamicmodules.png)
 
