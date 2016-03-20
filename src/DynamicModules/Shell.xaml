@@ -1,0 +1,21 @@
+﻿<mui:ModernWindow x:Class="DM.Demo.Shell"
+                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+                  xmlns:app="clr-namespace:DM.Demo"
+                  Icon="dm.ico"
+                  Title="WPF Dynamic Modules Demo"
+                  IsTitleVisible="True"
+                  LogoData="
+                  M170 2035 l0 -905 303 0 c414 0 555 20 731 104 203 96 326 249 387 481 22 81 24 110 23 295 0 193 -2 210 -27 293 -75 244 -223 421 -442 528 -186 91 -302 109 -691 109 l-284 0 0 -905z m615 705 c218 -31 360 -106 474 -248 91 -113 130 -236 138 -432 16 -398 -135 -627 -468 -711 -69 -17 -127 -22 -316 -26 l-233 -6 0 717 0 716 168 0 c92 0 199 -5 237 -10z
+                  M1980 2035 l0 -906 142 3 142 3 278 630 c153 347 297 678 320 737 23 59 43 107 44 105 1 -1 25 -58 53 -127 28 -69 174 -399 325 -735 l275 -610 135 -3 136 -3 0 906 0 905 -106 0 -105 0 3 -773 c3 -760 3 -772 -15 -713 -10 34 -160 382 -334 774 l-316 712 -52 0 -52 0 -316 -707 c-174 -390 -324 -738 -334 -775 -18 -66 -18 -56 -15 708 l4 774 -106 0 -106 0 0 -905z
+                  M2655 199 c-610 -3 -1458 -7 -1882 -8 l-773 -1 0 -95 0 -95 2000 0 2000 0 0 105 0 105 -117 -2 c-65 -1 -617 -5 -1228 -9z"
+                  Width="1024" Height="700"
+                  WindowStartupLocation="CenterScreen"
+                  ContentSource="/Views/IntroductionView.xaml">
+
+    <mui:ModernWindow.TitleLinks>
+        <mui:Link DisplayName="Settings" Source="/Views/SettingsView.xaml" />
+        <mui:Link DisplayName="Help" Source="https://github.com/hinojosachapel/DynamicModules" />
+    </mui:ModernWindow.TitleLinks>
+</mui:ModernWindow>

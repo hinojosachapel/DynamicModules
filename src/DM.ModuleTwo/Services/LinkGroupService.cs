@@ -1,0 +1,33 @@
+﻿using System;
+using FirstFloor.ModernUI.Presentation;
+using DM.Core.Interfaces;
+using DM.ModuleTwo.Views;
+
+namespace DM.ModuleTwo.Services
+{
+    /// <summary>
+    /// Creates a LinkGroup
+    /// </summary>
+    /// <returns></returns>
+    /// <remarks>
+    /// This is the entry point for the option menu.
+    /// </remarks>
+    public class LinkGroupService : ILinkGroupService
+    {
+        public LinkGroup GetLinkGroup()
+        {
+            LinkGroup _linkGroup = new LinkGroup
+            {
+                DisplayName = "Module Two"
+            };
+
+            _linkGroup.Links.Add(new Link
+            {
+                DisplayName = "Module Two",
+                Source = new Uri($"/DM.ModuleTwo;component/Views/{typeof(MainView).Name}.xaml", UriKind.Relative)
+            });
+
+            return _linkGroup;
+        }
+    }
+}

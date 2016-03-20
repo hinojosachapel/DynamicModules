@@ -1,0 +1,55 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:mui="http://firstfloorsoftware.com/ModernUI">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/FirstFloor.ModernUI;component/Assets/ModernUI.Dark.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <Color x:Key="AccentColor">#d80073</Color>
+
+    <SolidColorBrush x:Key="ButtonBackground" Color="#b1b1b1" />
+    <SolidColorBrush x:Key="ButtonBackgroundHover" Color="#7e7e82" />
+    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="ButtonBorder" Color="#b1b1b1" />
+    <SolidColorBrush x:Key="ButtonBorderHover" Color="#7e7e82" />
+    <SolidColorBrush x:Key="ButtonBorderPressed" Color="{DynamicResource AccentColor}" />
+
+    <SolidColorBrush x:Key="DataGridGridLines" Color="#d1d1d1" />
+    <SolidColorBrush x:Key="DataGridForeground" Color="#e1e1e1" />
+    <SolidColorBrush x:Key="DataGridCellBackgroundHover" Color="#8e8e82" />
+    <SolidColorBrush x:Key="DataGridCellForeground" Color="#e1e1e1" />
+    <SolidColorBrush x:Key="DataGridHeaderBackgroundHover" Color="#8e8e82" />
+    <SolidColorBrush x:Key="DataGridHeaderForeground" Color="#e1e1e1" />
+
+    <SolidColorBrush x:Key="HyperlinkHover" Color="#c1c1c1" />
+
+    <SolidColorBrush x:Key="ItemText" Color="#e1e1e1" />
+    <SolidColorBrush x:Key="ItemBackgroundHover" Color="#5e5e62" />
+
+    <SolidColorBrush x:Key="LinkButtonText" Color="#d1d1d1" />
+    <SolidColorBrush x:Key="LinkButtonTextHover" Color="#f1f1f1" />
+    <SolidColorBrush x:Key="LinkButtonTextPressed" Color="#919191" />
+    <SolidColorBrush x:Key="LinkButtonTextDisabled" Color="#919191" />
+
+    <SolidColorBrush x:Key="SeparatorBackground" Color="#d1d1d1" />
+
+    <SolidColorBrush x:Key="MenuText" Color="#d1d1d1" />
+    <SolidColorBrush x:Key="MenuTextHover" Color="#e1e1e1" />
+    <SolidColorBrush x:Key="MenuTextSelected" Color="#f1f1f1" />
+
+    <SolidColorBrush x:Key="SubMenuText" Color="#d1d1d1" />
+    <SolidColorBrush x:Key="SubMenuTextHover" Color="#e1e1e1" />
+    <SolidColorBrush x:Key="SubMenuTextSelected" Color="#f1f1f1" />
+    
+    <SolidColorBrush x:Key="WindowText" Color="#f1f1f1" />
+    <SolidColorBrush x:Key="WindowTextReadOnly" Color="#919191" />
+
+    <!-- background image taken from http://good-wallpapers.com/ -->
+    <Rectangle x:Key="WindowBackgroundContent" x:Shared="false">
+        <Rectangle.Fill>
+            <ImageBrush Opacity=".3" ImageSource="background.macosx.jpg" Stretch="UniformToFill" />
+        </Rectangle.Fill>
+    </Rectangle>
+
+</ResourceDictionary>

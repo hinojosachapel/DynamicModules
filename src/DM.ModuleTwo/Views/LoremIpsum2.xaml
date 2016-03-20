@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="DM.ModuleTwo.Views.LoremIpsum2"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+
+    <Grid MaxWidth="{StaticResource ViewMaxWidth}" HorizontalAlignment="Left">
+        <ScrollViewer>
+            <StackPanel MinWidth="200">
+                <TextBlock Text="MODULE TWO LOREM IPSUM 2" Margin="0,0,0,8" Style="{StaticResource Heading2}" />
+                <TextBlock Text="Ut id arcu id ex luctus convallis. Cras ligula turpis, volutpat non nulla sed, dictum aliquam libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet sapien sed leo malesuada mattis. Suspendisse vitae tortor ex. Nullam efficitur pharetra consectetur. Quisque ac condimentum enim. Aliquam non enim cursus, tempus elit vitae, pulvinar augue. Aenean nec tempus mauris. Vestibulum facilisis ut tellus nec porta." Margin="0,0,0,8" TextWrapping="Wrap" />
+                <TextBlock Text="Cras suscipit et est ac molestie. Donec ligula magna, auctor quis justo eget, dictum fermentum lacus. Vivamus non ante quis ligula gravida egestas et quis nisl. Nullam eleifend nisl risus, non consectetur orci faucibus ut. Sed felis tellus, vehicula at laoreet sed, consectetur semper diam. Fusce nisi ipsum, faucibus vitae mauris in, venenatis molestie tellus. Integer mattis diam eu dolor auctor hendrerit. Quisque mattis odio quis rutrum bibendum. Nulla quis odio tortor. Maecenas dictum varius nunc varius vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent posuere, erat ut consequat dignissim, odio turpis mollis orci, ut consectetur ipsum odio quis sapien. Praesent iaculis tempor sem, vitae malesuada tortor egestas a. Aliquam eget eleifend sem, at ornare est." Margin="0,0,0,8" TextWrapping="Wrap"/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+
+</UserControl>
