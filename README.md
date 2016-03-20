@@ -23,10 +23,10 @@ Note that the solution is built into <strong>..\bin\</strong> folder.
 
 ### Links of interest
 You may find complementary information at:
-[Modern UI for WPF (MUI) Demo project](https://github.com/firstfloorsoftware/mui/tree/master/1.0/FirstFloor.ModernUI/FirstFloor.ModernUI.App)
-[Modern UI for WPF Templates (Visual Studio Extension)](https://visualstudiogallery.msdn.microsoft.com/7a4362a7-fe5d-4f9d-bc7b-0c0dc272fe31)
-[Prism Samples WPF / Modularity With Unity](https://github.com/PrismLibrary/Prism-Samples-Wpf/tree/master/Modularity/ModularityWithUnity)
-[On Prism's ViewModelLocator convention*](http://brianlagunas.com/getting-started-prisms-new-viewmodellocator/)
+  * [Modern UI for WPF (MUI) Demo project](https://github.com/firstfloorsoftware/mui/tree/master/1.0/FirstFloor.ModernUI/FirstFloor.ModernUI.App)
+  * [Modern UI for WPF Templates (Visual Studio Extension)](https://visualstudiogallery.msdn.microsoft.com/7a4362a7-fe5d-4f9d-bc7b-0c0dc272fe31)
+  * [Prism Samples WPF / Modularity With Unity](https://github.com/PrismLibrary/Prism-Samples-Wpf/tree/master/Modularity/ModularityWithUnity)
+  * [On Prism's ViewModelLocator convention*](http://brianlagunas.com/getting-started-prisms-new-viewmodellocator/)
 *Currently there is no need to "implement" the IView interface in the view's code-behind.
 
 ### Contributors
