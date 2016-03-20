@@ -9,15 +9,25 @@ I wondered if there is a way to solve the problem by using Prism and the open so
 
 ## The central ideas for creating the plugin architecture are:
   * Dynamically load the desired project modules.
+  * Each module will expose an entry point for an option in the main menu.
   * Dynamically build the main menu from the loaded modules.
-  * Each loaded module will expose an entry point for an option in the main menu.
   * The first option in the main menu will be fixed and common for every user.
 
 Dynamic Modules are copied to a directory as part of a post-build step. These modules are not referenced in the startup project and are discovered by examining the assemblies in a directory. The module projects have the following post-build step in order to copy themselves into that directory:
 
-xcopy "$(TargetDir)$(TargetFileName)" "$(TargetDir)modules\" /y
+<strong>xcopy "$(TargetDir)$(TargetFileName)" "$(TargetDir)modules\" /y</strong>
+
+Note that the solution is built into <strong>..\bin\</strong> folder.
 
 <strong>WARNING! Do not forget to explicitly compile the solution before each running so the modules are copied into the modules folder.</strong>
+
+### Links of interest
+You may find complementary information at:
+[Modern UI for WPF (MUI) Demo project](https://github.com/firstfloorsoftware/mui/tree/master/1.0/FirstFloor.ModernUI/FirstFloor.ModernUI.App)
+[Modern UI for WPF Templates (Visual Studio Extension)](https://visualstudiogallery.msdn.microsoft.com/7a4362a7-fe5d-4f9d-bc7b-0c0dc272fe31)
+[Prism Samples WPF / Modularity With Unity](https://github.com/PrismLibrary/Prism-Samples-Wpf/tree/master/Modularity/ModularityWithUnity)
+[On Prism's ViewModelLocator convention*](http://brianlagunas.com/getting-started-prisms-new-viewmodellocator/)
+*Currently there is no need to "implement" the IView interface in the view's code-behind.
 
 ### Contributors
   * [hinojosachapel](https://github.com/hinojosachapel)
