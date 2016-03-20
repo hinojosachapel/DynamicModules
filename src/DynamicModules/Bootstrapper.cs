@@ -48,8 +48,14 @@ namespace DM.Demo
         protected override void ConfigureModuleCatalog()
         {
             // Dynamic Modules are copied to a directory as part of a post-build step.
-            // These modules are not referenced in the startup project and are discovered by examining the assemblies in a directory.
-            // The module projects have a post-build step to copy themselves into that directory.
+            // These modules are not referenced in the startup project and are discovered 
+            // by examining the assemblies in a directory. The module projects have the 
+            // following post-build step in order to copy themselves into that directory:
+            //
+            // xcopy "$(TargetDir)$(TargetFileName)" "$(TargetDir)modules\" /y
+            //
+            // WARNING! Do not forget to explicitly compile the solution before each running
+            // so the modules are copied into the modules folder.
             var directoryCatalog = (DirectoryModuleCatalog)ModuleCatalog;
             directoryCatalog.Initialize();
 
