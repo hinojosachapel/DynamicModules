@@ -11,10 +11,10 @@ I wondered if there is a way to solve the problem by using Prism and the open so
 
   * Put into a directory the desired project modules (or put them all and run a filter on loading time).
   * Dynamically load the project modules from the modules folder.
-  * Each module will expose an entry point for an option in the main menu.
+  * Each module exposes an entry point for an option in the main menu.
   * Dynamically build the main menu from the loaded modules.
-  * The first option in the main menu will be fixed and common for every user.
-  * A core module with enterprise services, repositories, DTOs, data model definitions, etc., will be statically loaded. It can be referenced by any of the solution projects.
+  * The first option in the main menu is fixed and common for every user.
+  * A core module with shared services, repositories, DTOs, data model definitions, etc., is statically loaded. It can be referenced by any solution project.
 
 Dynamic Modules are copied to a directory as part of a post-build step. These modules are not referenced in the startup project and are discovered by examining the assemblies in a directory. The module projects have the following post-build step in order to copy themselves into that directory:
 
