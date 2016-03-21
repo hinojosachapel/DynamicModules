@@ -9,7 +9,7 @@ I wondered if there is a way to solve the problem by using Prism and the open so
 
 ## The central ideas for creating the plugin architecture are:
 
-  * Put into a directory the desired project modules (or put them all and run a filter on loading time.).
+  * Put into a directory the desired project modules (or put them all and run a filter on loading time).
   * Dynamically load the project modules from the modules folder.
   * Each module will expose an entry point for an option in the main menu.
   * Dynamically build the main menu from the loaded modules.
