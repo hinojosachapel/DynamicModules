@@ -16,11 +16,11 @@ I wondered if there is a way to solve the problem by using Prism and the open so
   * The first option in the main menu will be fixed and common for every user.
   * A core module with enterprise services, repositories, DTOs, data model definitions, etc., will be statically loaded. It can be referenced by any of the solution projects.
 
-#### *Or put them all and run a filter on loading time.
+*Or put them all and run a filter on loading time.
 
 Dynamic Modules are copied to a directory as part of a post-build step. These modules are not referenced in the startup project and are discovered by examining the assemblies in a directory. The module projects have the following post-build step in order to copy themselves into that directory:
 
-<strong>xcopy "$(TargetDir)$(TargetFileName)" "$(TargetDir)modules\" /y</strong>
+xcopy "$(TargetDir)$(TargetFileName)" "$(TargetDir)modules\" /y
 
 Note that the solution is built into "..\bin\" folder.
 
@@ -33,7 +33,7 @@ You may find complementary information at:
   * [Prism Samples WPF / Modularity With Unity](https://github.com/PrismLibrary/Prism-Samples-Wpf/tree/master/Modularity/ModularityWithUnity)
   * [On Prism's ViewModelLocator convention*](http://brianlagunas.com/getting-started-prisms-new-viewmodellocator/)
 
-#### *Currently there is no need to "implement" the IView interface in the view's code-behind.
+*Currently there is no need to "implement" the IView interface in the view's code-behind.
 
 ### Contributors
   * [hinojosachapel](https://github.com/hinojosachapel)
