@@ -7,7 +7,7 @@ A few time ago a colleague of mine told me about a problem he had to solve. A cu
 
 I wondered if there is a way to solve the problem by using Prism and the open source MUI library for creating a plugin architecture, and came out with a prototype solution which I am presenting here.
 
-## The central ideas for creating the plugin architecture are:
+## The central ideas for creating the proposed plugin architecture are:
 
   * Put into a directory the desired project modules (or put them all and run a filter on loading time).
   * Dynamically load the project modules from the modules folder.
