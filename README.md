@@ -18,7 +18,7 @@ I wondered if there is a way to solve the problem by using Prism and the open so
 
 Dynamic Modules are copied to a directory as part of a post-build step. These modules are not referenced in the startup project and are discovered by examining the assemblies in a directory. The module projects have the following post-build step in order to copy themselves into that directory:
 
-xcopy "$(TargetDir)$(TargetFileName)" "$(TargetDir)modules\" /y
+xcopy "$(TargetDir)$(TargetFileName)" "$(TargetDir)<strong>modules</strong>\" /y
 
 Note that the solution is built into "..\bin\" folder.
 
