@@ -12,7 +12,7 @@ namespace DM.ModuleTwo
         {
             if (container == null)
             {
-                throw new ArgumentNullException("ModuleTwo container");
+                throw new ArgumentNullException($"{nameof(container)}");
             }
 
             _container = container;
@@ -21,7 +21,7 @@ namespace DM.ModuleTwo
         public void Initialize()
         {
             //_container.RegisterType<InterfaceName, ClassName>();
-            System.Windows.MessageBox.Show("ModuleTwo has been initialized ;-)");
+            System.Windows.MessageBox.Show($"{nameof(ModuleTwo)} has been initialized ;-)");
         }
     }
 }
