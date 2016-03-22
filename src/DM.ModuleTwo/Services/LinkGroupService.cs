@@ -24,7 +24,7 @@ namespace DM.ModuleTwo.Services
             linkGroup.Links.Add(new Link
             {
                 DisplayName = "Module Two",
-                Source = new Uri($"/DM.ModuleTwo;component/Views/{typeof(MainView).Name}.xaml", UriKind.Relative)
+                Source = new Uri($"/DM.ModuleTwo;component/Views/{nameof(MainView)}.xaml", UriKind.Relative)
             });
 
             return linkGroup;
