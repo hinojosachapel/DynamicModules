@@ -11,7 +11,7 @@
         <ScrollViewer>
             <StackPanel >
                 <TextBlock Text="DYNAMIC MODULES" Style="{StaticResource Heading1}" Margin="0,0,0,8"/>
-                <mui:BBCodeBlock BBCode="[b]Dynamic Modules[/b] is a sample prototype for a dynamic modular application in a plugin architecture based on the PRISM Library and the Modern UI for WPF (MUI) toolkit." Margin="0,0,0,24" />
+                <mui:BBCodeBlock BBCode="[b]Dynamic Modules[/b] is a sample prototype for a dynamic modular application in a plugin architecture based on the Prism Library and the Modern UI for WPF (MUI) toolkit." Margin="0,0,0,24" />
                 <mui:BBCodeBlock BBCode="[b]Prism Library[/b] is a framework for building loosely coupled, maintainable, and testable XAML applications in WPF, Windows 10 UWP, and Xamarin Forms: [url=https://github.com/PrismLibrary/Prism]visit website[/url]" Margin="0,0,0,24" />
                 <mui:BBCodeBlock BBCode="[b]Modern UI for WPF (MUI)[/b] is a set of controls and styles converting your WPF application into a great looking Modern UI app: [url=https://github.com/firstfloorsoftware/mui]visit website[/url]" Margin="0,0,0,24" /> 
             </StackPanel>

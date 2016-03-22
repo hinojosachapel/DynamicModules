@@ -1,20 +1,26 @@
-﻿using Microsoft.Practices.Unity;
+﻿using System;
+using Microsoft.Practices.Unity;
 using Prism.Modularity;
 
 namespace DM.ModuleTwo
 {
     public class ModuleTwo : IModule
     {
-        public IUnityContainer Container { get; private set; }
-        
+        private readonly IUnityContainer _container;
+
         public ModuleTwo(IUnityContainer container)
         {
-            Container = container;
+            if (container == null)
+            {
+                throw new ArgumentNullException("ModuleTwo container");
+            }
+
+            _container = container;
         }
 
         public void Initialize()
         {
-            //Container.RegisterType<InterfaceName, ClassName>();
+            //_container.RegisterType<InterfaceName, ClassName>();
             System.Windows.MessageBox.Show("ModuleTwo has been initialized ;-)");
         }
     }

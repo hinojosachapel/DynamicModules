@@ -16,18 +16,18 @@ namespace DM.ModuleOne.Services
     {
         public LinkGroup GetLinkGroup()
         {
-            LinkGroup _linkGroup = new LinkGroup
+            LinkGroup linkGroup = new LinkGroup
             {
                 DisplayName = "Module One"
             };
 
-            _linkGroup.Links.Add(new Link
+            linkGroup.Links.Add(new Link
             {
                 DisplayName = "Module One",
                 Source = new Uri($"/DM.ModuleOne;component/Views/{typeof(MainView).Name}.xaml", UriKind.Relative)
             });
 
-            return _linkGroup;
+            return linkGroup;
         }
     }
 }
