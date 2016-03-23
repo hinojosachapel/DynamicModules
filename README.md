@@ -26,6 +26,7 @@ Note that the solution is built into "..\bin\" folder.
 
 ### Links of interest
 You may find complementary information at:
+  * [Dynamic Modules with Prism and the Modern UI for WPF toolkit](http://www.codeproject.com/Articles/1087362/Dynamic-Modules-with-Prism-and-the-Modern-UI-for-WPF-toolkit)
   * [Modern UI for WPF (MUI) Demo project](https://github.com/firstfloorsoftware/mui/tree/master/1.0/FirstFloor.ModernUI/FirstFloor.ModernUI.App)
   * [Modern UI for WPF Templates (Visual Studio Extension)](https://visualstudiogallery.msdn.microsoft.com/7a4362a7-fe5d-4f9d-bc7b-0c0dc272fe31)
   * [Prism Samples WPF / Modularity With Unity](https://github.com/PrismLibrary/Prism-Samples-Wpf/tree/master/Modularity/ModularityWithUnity)
