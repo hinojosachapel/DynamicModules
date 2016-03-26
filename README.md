@@ -5,7 +5,7 @@ Dynamic Modules is a sample prototype for a WPF modular application based on the
 
 A little while ago, a colleague of mine told me about a problem he had to solve. A customer asked him to develop a desktop application that presents a different set of features in accordance to which of the enterprise offices is running the software. On the one hand, I remembered how to do that from a past project where I was involved. On the other hand, [there is an open source project](https://github.com/firstfloorsoftware/mui) for creating WPF applications with a modern look & feel, which I am following since a couple of years because I think it's really great.
 
-I wondered if there is a way to solve the problem by using Prism and the open source MUI library for creating a plugin architecture, and came out with a prototype solution which I am presenting here.
+I wondered if there is a way to solve the problem by using Prism and the open source MUI library for creating a plugin architecture, and came up with a prototype solution which I am presenting here.
 
 ## The central ideas for the proposed plugin architecture are:
 
