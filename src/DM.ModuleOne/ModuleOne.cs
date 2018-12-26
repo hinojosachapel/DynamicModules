@@ -1,26 +1,19 @@
 ﻿using System;
-using Microsoft.Practices.Unity;
+using Prism.Ioc;
 using Prism.Modularity;
 
 namespace DM.ModuleOne
 {
     public class ModuleOne : IModule
     {
-        private readonly IUnityContainer _container;
-        
-        public ModuleOne(IUnityContainer container)
+        public void OnInitialized(IContainerProvider containerProvider)
         {
-            if (container == null)
-            {
-                throw new ArgumentNullException($"{nameof(container)}");
-            }
 
-            _container = container;
         }
 
-        public void Initialize()
+        public void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            //_container.RegisterType<InterfaceName, ClassName>();
+            //containerRegistry.Register<InterfaceName, ClassName>();
             System.Windows.MessageBox.Show($"{nameof(ModuleOne)} has been initialized ;-)");
         }
     }

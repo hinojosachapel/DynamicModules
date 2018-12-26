@@ -8,11 +8,11 @@ namespace DM.ModuleOne.ViewModels
 {
     public class DataGridViewModel : BindableBase
     {
-        private ObservableCollection<Customer> customers;
+        private ObservableCollection<Customer> _customers;
         public ObservableCollection<Customer> Customers
         {
-            get { return customers; }
-            set { SetProperty(ref customers, value); }
+            get { return _customers; }
+            set { SetProperty(ref _customers, value); }
         }
 
         public DataGridViewModel(ICustomerService service)

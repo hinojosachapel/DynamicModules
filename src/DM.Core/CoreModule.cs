@@ -1,5 +1,5 @@
 ﻿using System;
-using Microsoft.Practices.Unity;
+using Prism.Ioc;
 using Prism.Modularity;
 using DM.Core.Services;
 
@@ -7,21 +7,14 @@ namespace DM.Core
 {
     public class CoreModule : IModule
     {
-        private readonly IUnityContainer _container;
-
-        public CoreModule(IUnityContainer container)
+        public void OnInitialized(IContainerProvider containerProvider)
         {
-            if (container == null)
-            {
-                throw new ArgumentNullException($"{nameof(container)}");
-            }
 
-            _container = container;
         }
 
-        public void Initialize()
+        public void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            _container.RegisterType<ICustomerService, CustomerService>(new ContainerControlledLifetimeManager());
+            containerRegistry.Register<ICustomerService, CustomerService>();
         }
     }
 }
