@@ -22,7 +22,7 @@ xcopy "$(TargetDir)$(TargetFileName)" "$(TargetDir)<strong>modules</strong>\" /y
 
 Note that the solution is built into "..\bin\" folder.
 
-<strong>WARNING! Do not forget to explicitly compile the solution before each running so the modules are copied into the modules folder.</strong>
+<strong>WARNING! Do not forget to build the solution (F6) before each running so the modules are copied into the modules folder.</strong>
 
 ### Links of interest
 You may find complementary information at:
